@@ -1,0 +1,29 @@
+body {
+	margin:0;
+}
+	
+div.navbar {
+	background-color:black;
+	color:white;
+	margin:0;
+	position: sticky;
+	top: 0;
+}
+
+a {
+	color: white;
+	text-decoration:none;
+}
+p.title {
+	margin:0;
+	text-align:center;
+}
+
+p.A {
+	text-align:center;
+	font-size:100000000px;
+	
+}
+.invisible{
+	display:none;
+}

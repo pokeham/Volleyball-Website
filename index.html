@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>UI Club VB</title>
+</head>
+<body>
+
+	<div class="navbar">
+		<p class="title">UIOWA CLUB VOLLEYBALL</p>
+		<div id="links" class = "invisible">
+			<a href="donate.html">Donate</a>
+			<a href="merch.html">Merch</a>
+			<a href="aboutus.html">About Us</a>
+			<a href="videos.html">Videos</a>
+		</div>
+	</div>
+	<div class = "tempBullshit">
+		<p class = "A">A</p>
+		
+	</div>
+<script>
+	
+	var tabs = document.getElementById("links");
+	var prevScroll; 
+	window.onscroll = function(event){
+		var curr = window.pageYOffset
+		if(curr - prevScroll > 0){//scroll down
+			clearTabs();
+		}else{//scroll up
+			addTabs();
+		}
+		prevScroll = curr;
+	}
+	function addTabs(){
+		tabs.classList.add("invisible");
+	}
+	
+	function clearTabs(){
+		tabs.classList.remove("invisible");
+	}
+</script>
+
